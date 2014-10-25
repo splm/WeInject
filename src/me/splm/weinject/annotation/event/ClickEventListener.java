@@ -14,19 +14,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 
-/**
- * 
- * @ClassName: EventListener   
- * @Description 注解事件类
- * @author splm   
- * @date 2014-9-22 下午1:22:45
- * 
- * 扩展说明：
- * 1.声明String类型的方法名变量；
- * 2.创建返回值为EventListener的方法，方法名称最好为功能名称，
- * 3.继承对应的事件监听器，在对应实现方法中使用invoke执行方法即可；
- * 
- */
 public class ClickEventListener extends AbsEventListener implements OnClickListener,OnLongClickListener,OnItemClickListener,OnItemLongClickListener {
 	
 	private static final String TAG="EventListener";
@@ -179,32 +166,7 @@ public class ClickEventListener extends AbsEventListener implements OnClickListe
 		
 	}
 	
-	/**
-	 * 
-	* @Title: invokeClickMethod 
-	  
-	* @Description 注册单击事件
-	
-	* @caution  无
-	  
-	* @param object 当前的Activity
-	* @param method_name 在Activity中创建的方法
-	* @param parms 
-	  
-	* @return Object 
-	  
-	* @throws 
-	
-	* @author splm
-	
-	* @contact cd@zhaot.com
-	
-	* @version v1.0
-	
-	* @date 2014-10-19-下午2:53:42
-	
-	* @copyright [吉林找它信息有限公司]
-	 */
+
 	private static Object invokeClickMethod(Object object,String method_name,Object...parms){
 		
 		if(object==null){
@@ -294,32 +256,6 @@ public class ClickEventListener extends AbsEventListener implements OnClickListe
 		
 	}
 	
-	/**
-	 * 
-	* @Title: invokeItemLongClickMethod 
-	  
-	* @Description 执行listview元素长按事件
-	
-	* @caution 无
-	  
-	* @param arg_object
-	* @param arg_method_name
-	* @param arg_parms
-	  
-	* @return boolean 与listview onItemLongClick方法返回值相同
-	  
-	* @throws 
-	
-	* @author splm
-	
-	* @contact cd@zhaot.com
-	
-	* @version v1.0
-	
-	* @date 2014-10-19-下午5:13:55
-	
-	* @copyright [吉林找它信息有限公司]
-	 */
 	private static boolean invokeItemLongClickMethod(Object arg_object,String arg_method_name,Object...arg_parms){
 		
 		if(arg_object==null){
@@ -367,33 +303,6 @@ public class ClickEventListener extends AbsEventListener implements OnClickListe
 		
 	}
 	
-	/**
-	 * 
-	* @Title: invokeItemClick 
-	  
-	* @Description 
-	
-	* @caution 无
-	  
-	* @param @param arg_object
-	* @param @param arg_method_name
-	* @param @param arg_parms
-	* @param @return    设定参数 
-	  
-	* @return Object    返回类型 
-	  
-	* @throws 
-	
-	* @author splm
-	
-	* @contact cd@zhaot.com
-	
-	* @version v1.0
-	
-	* @date 2014-10-19-下午5:19:37
-	
-	* @copyright [吉林找它信息有限公司]
-	 */
 	private static Object invokeItemClick(Object arg_object,String arg_method_name,Object...arg_parms){
 		
 		if(arg_object==null){

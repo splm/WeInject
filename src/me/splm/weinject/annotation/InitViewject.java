@@ -3,6 +3,7 @@ package me.splm.weinject.annotation;
 import java.lang.reflect.Field;
 
 import me.splm.weinject.annotation.event.ClickEventListener;
+import me.splm.weinject.annotation.event.KeyEventListener;
 import me.splm.weinject.annotation.event.TouchEventListener;
 import android.app.Activity;
 import android.content.Context;
@@ -76,6 +77,8 @@ public final class InitViewject {
 						new ClickEventListener(obj).registListener(obj, field, viewInject.itemLongClick(), MethodTypes.ItemLongClick);
 						
 						new TouchEventListener(obj).registListener(obj, field, viewInject.touch(), MethodTypes.Touch);
+						
+						new KeyEventListener(obj).registListener(obj, field, viewInject.onKeyDown(), MethodTypes.OnKeyDown);
 						
 					}
 					

@@ -9,23 +9,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 
-/**
- * 
-   
-* @ClassName: TouchEventListener   
-
-* @Description 注解触摸事件
-
-* @author splm  
-
-* @contact cd@zhaot.com 
-
-* @date 2014-10-19 下午5:26:32      
-
-* @version v1.0
-
-* @copyright [吉林找它信息有限公司]
- */
 public class TouchEventListener extends AbsEventListener implements OnTouchListener {
 	
 	private Object object;

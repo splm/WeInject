@@ -21,4 +21,6 @@ public @interface ViewInject {
 	
 	public String touch() default "";
 	
+	public String onKeyDown() default "";
+	
 }
