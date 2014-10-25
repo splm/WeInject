@@ -12,7 +12,7 @@ import android.view.View;
 public final class InitViewject {
 	
 	private Context context;
-	
+	 
 	private static InitViewject instance;
 	
 	public static InitViewject getInstance(){

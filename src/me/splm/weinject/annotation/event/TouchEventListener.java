@@ -17,7 +17,7 @@ public class TouchEventListener extends AbsEventListener implements OnTouchListe
 	
 	public TouchEventListener(Object object){
 		
-		this.object=object;
+		this.object=object; 
 		
 	}
 	

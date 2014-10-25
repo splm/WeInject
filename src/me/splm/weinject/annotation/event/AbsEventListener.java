@@ -6,6 +6,6 @@ import me.splm.weinject.annotation.MethodTypes;
 
 public abstract class AbsEventListener {
 	
-	public abstract void registListener(Object activity,Field field,String method_name,MethodTypes method);
+	public abstract void registListener(Object activity,Field field,String method_name,MethodTypes method); 
 
 }

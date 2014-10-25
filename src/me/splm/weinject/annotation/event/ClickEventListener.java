@@ -13,7 +13,7 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
-
+ 
 public class ClickEventListener extends AbsEventListener implements OnClickListener,OnLongClickListener,OnItemClickListener,OnItemLongClickListener {
 	
 	private static final String TAG="EventListener";
