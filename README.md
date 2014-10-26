@@ -36,7 +36,7 @@ public void methodName(View v){
 
 }
 
-@viewInject(id=R.id.test_btn,click="onClick")
+@viewInject(id=R.id.test_btn,click="methodName")
 private Button test_btn;
 ```
 
