@@ -7,5 +7,5 @@ public enum MethodTypes {
 	ItemClick,//listview元素单击事件
 	ItemLongClick,//listview元素长按事件
 	Touch,//view触摸事件
- OnKeyDown 
+ OnKeyDown,
 }
